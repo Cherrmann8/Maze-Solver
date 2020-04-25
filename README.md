@@ -1,10 +1,10 @@
 # Maze Solver
 
-Maze Solver is a simple simulation of evolution using a simple genetic algorithm and shallow neural networks (NN) in Java.
+Maze Solver is a simulation of natural evolution using a simple genetic algorithm and shallow neural networks (NN) in Java. The genetic algorithm is used to update a population of agents. Each agent has genes that describe the architecture of a shallow NN. This shallow NN is used by the agent to make decisions based on its environment.
 
 # Simulation Description
 
-At the start of the simulation a population of agents are generated. Each agent has genes that describe the architecture of a shallow NN. The simulation also loads the maze from a CSV file.
+At the start of the simulation a population of agents is generated. Each agent is given randomly generated genes. The simulation also loads the maze from a CSV file.
 
 The simulation then starts a round of training for the population. Each training consists of testing the population and then updating the population.
 * The testing phase has each agent in the population interact with the environment (the maze). Every agent is placed at the same position in a maze to start and is tasked with finding the same exit. After the agent has either reached the time limit or reached the end of the maze, the agent is given a score for how well it did. (Or how close it got to the end of the maze).
